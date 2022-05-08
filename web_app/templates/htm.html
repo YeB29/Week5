@@ -1,0 +1,15 @@
+<html >
+<head>
+<title>Demo Machine Learning SE4</title>
+</head>
+<body>
+<h1>Voorspel salaris</h1>
+<!‐‐ url_for in action via flask en voorspellen_salaris functie wordt aangeroepen ‐‐>
+<form action = '{{ url_for("voorspellen_salaris")}}' method = 'post'>
+<input type= 'text' name='Ervaring' placeholder='Vul aantal jaren ervaring in:' required='required' />
+<button type='submit'>Voorspel</button>
+</form>
+<!‐‐ return waarde van de functie wordt getoond ‐‐>
+{{ antwoord }}
+</body>
+</html>
