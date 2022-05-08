@@ -17,8 +17,8 @@ def home():
 
 
 #waarden uit de form ophalen op het moment de button wordt aangeklikt
-@app.route('/v_salaris',methods=['POST'])
-def voorspellen_salaris():
+@app.route('/v_tempratuur',methods=['POST'])
+def voorspellen_tempratuur():
     #waarden uit de form ophalen
     int_features = [int(x) for x in request.form.values()]
     print(int_features)
